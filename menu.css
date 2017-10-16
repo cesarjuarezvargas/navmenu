@@ -1,0 +1,170 @@
+/***************************************************
+Add your Google Fonts
+Update ALL the named colours to create a monochromatic scheme
+Style the menus - one horizontally and one vertically
+Add the hover/active effects to your menu items
+***************************************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+    line-height: 1.6;
+    /* ADD the Google sans-serif font to this font stack */
+    font-family: Montserrat, helvetica, arial, sans-serif;
+}
+html, body{
+    background-color: #7F6F76;
+}
+h1{
+    font-size: 5rem;
+    /* ADD the Google serif font to this font stack */
+    font-family: Vidaloka, Times, 'Times New Roman', Palatino, serif; 
+    padding: 1rem 2rem;
+    text-align: center;
+}
+h2{
+    font-size: 4.23rem;
+    /* ADD the Google serif font to this font stack */
+    font-family: Vidaloka, 'Times New Roman', 'Book Antiqua', Palatino, serif;
+    padding: 1rem 2rem;
+}
+nav li{
+    font-size: 2.618rem;
+}
+p{
+    font-size: 1.618rem;
+    padding: 1rem 2rem;
+    color: antiquewhite;
+}
+.wrapper{
+    max-width: 1400px; 
+    width: 80%;
+    margin: 0 auto;
+    color: navajowhite;
+    background-color: #CC749B;
+    background: linear-gradient(to right, rgba(204,116,155,0), rgba(204,116,155,1));
+
+    
+}
+header{
+    border-bottom: 0.8rem solid #FFDEEC;
+    background-color: #7F4961;
+    color: white;
+}
+
+/********add fonts, colour, etc. to code above*/
+
+/*********horizontal menu*/
+
+.menu-h{
+    width: 100%;
+/*    take 100% of the 80% of the effective content area*/
+}
+
+
+
+    .menu-h li{
+        list-style-type: none;
+        float: left;
+        width: 20%;
+        text-align: center;
+        
+/*
+        border-left: 1px solid #333;
+        border-bottom: 1px solid #555;
+*/
+        text-decoration: none;
+        
+        
+        
+        /* style the list items to remove the bullets 
+        and line up horizontally
+        and take up 20% of the width of the ul */
+    }
+
+
+        .menu-h a,
+        .menu-h a:link,
+        .menu-h a:visited{
+            
+            transition: 0.5s ease-in;
+            display: block;
+            color: #FFA9CA;
+            cursor: pointer;
+            text-decoration: none;
+            
+            /* style the anchors to fill the entire width of the li 
+            make sure there is padding around your text */
+        }
+        .menu-h a:hover,
+        .menu-h a:active{
+              
+            text-decoration: none;
+            display: block;
+            color:navajowhite;
+            background-color: #faebd7;
+            background: linear-gradient(to right, rgba(250,235,215,0), rgba(250,235,215,1));
+            
+            
+        }
+
+/*bad design: putting a bottom border above; it will make the content jumpy when the hover activates */
+/********************vertical menu*************************** command+alt+b beautifies all the coding/*/
+
+
+.menu-v{
+    width: 20%;
+    float:left;
+}
+    .menu-v li{
+        
+        list-style-type: none;
+        width: 100%;
+        
+}
+        
+/*
+    above:  style the list items to remove the bullets 
+        and line up vertically
+        and take up 100% of the width of the ul 
+    
+*/
+
+        .menu-v a,
+        .menu-v a:link,
+        .menu-v a:visited{
+        
+            transition: 1s ease-in;    
+            display: block;
+            color: #FFA9CA;
+            text-decoration: none;
+            cursor: pointer;
+            border: 1rem solid transparent;
+            text-align: center;
+            
+            
+}
+
+/*             style the anchors to fill the entire width of the li */
+        
+
+        .menu-v a:hover,
+        .menu-v a:active{
+            color:brown;
+            font-stretch: extra-condensed;
+            font-variant:small-caps;
+            color: antiquewhite;
+            background-color: #FF5D9B;
+            box-shadow:10px 10px 5px antiquewhite;
+            
+        }
+main{
+    width:80%;
+    float: right;
+}
+footer{
+    clear:both;
+}
